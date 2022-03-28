@@ -1,6 +1,7 @@
 package com.example.testcovidapi
 
 import android.graphics.RectF
+import com.example.testcovidapi.data.responsedata.CovidData
 import com.robinhood.spark.SparkAdapter
 
 class CovidSparkAdapter(private val dailyData: List<CovidData>): SparkAdapter() {

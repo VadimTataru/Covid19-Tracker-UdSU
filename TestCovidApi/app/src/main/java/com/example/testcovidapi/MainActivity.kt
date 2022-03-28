@@ -1,14 +1,11 @@
 package com.example.testcovidapi
 
-import android.R.attr
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.annotation.ColorInt
 import androidx.core.content.ContextCompat
 import com.example.testcovidapi.databinding.ActivityMainBinding
-import com.github.mikephil.charting.data.Entry
-import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import retrofit2.Call
 import retrofit2.Callback
@@ -18,9 +15,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.*
-import android.R.attr.data
-
-
+import com.example.testcovidapi.data.apiinterface.CovidService
+import com.example.testcovidapi.data.responsedata.CovidData
 
 
 private const val BASE_URL = "https://covidtracking.com/api/v1/"
